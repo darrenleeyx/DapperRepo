@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D4949F5-3BC4-490B-BE19-0259B60E034C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C82E87E6-766A-43CE-A83C-DE003B3623CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperRepo.Infrastructure", "src\DapperRepo.Infrastructure\DapperRepo.Infrastructure.csproj", "{B61B87BF-0D69-4E3E-8C7D-D9986A25561A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperRepo.Api", "src\DapperRepo.Api\DapperRepo.Api.csproj", "{D4A50B1A-3396-477F-AB62-F44148C912A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperRepo.Application", "src\DapperRepo.Application\DapperRepo.Application.csproj", "{69F1B6A2-3177-4B10-93A1-07E68D1EF819}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperRepo.Domain", "src\DapperRepo.Domain\DapperRepo.Domain.csproj", "{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B61B87BF-0D69-4E3E-8C7D-D9986A25561A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61B87BF-0D69-4E3E-8C7D-D9986A25561A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61B87BF-0D69-4E3E-8C7D-D9986A25561A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61B87BF-0D69-4E3E-8C7D-D9986A25561A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A50B1A-3396-477F-AB62-F44148C912A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A50B1A-3396-477F-AB62-F44148C912A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A50B1A-3396-477F-AB62-F44148C912A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A50B1A-3396-477F-AB62-F44148C912A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F1B6A2-3177-4B10-93A1-07E68D1EF819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F1B6A2-3177-4B10-93A1-07E68D1EF819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F1B6A2-3177-4B10-93A1-07E68D1EF819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F1B6A2-3177-4B10-93A1-07E68D1EF819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B61B87BF-0D69-4E3E-8C7D-D9986A25561A} = {7D4949F5-3BC4-490B-BE19-0259B60E034C}
+		{D4A50B1A-3396-477F-AB62-F44148C912A5} = {7D4949F5-3BC4-490B-BE19-0259B60E034C}
+		{69F1B6A2-3177-4B10-93A1-07E68D1EF819} = {7D4949F5-3BC4-490B-BE19-0259B60E034C}
+		{479A6BCA-9ECB-41B3-9646-375B1CCA2ADE} = {7D4949F5-3BC4-490B-BE19-0259B60E034C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4069BA5F-684B-411C-9DB4-ECC0CAA4ED31}
+	EndGlobalSection
+EndGlobal
