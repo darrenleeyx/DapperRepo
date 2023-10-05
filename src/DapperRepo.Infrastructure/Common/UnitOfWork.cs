@@ -1,7 +1,9 @@
-﻿using DapperRepo.Application;
+﻿using DapperRepo.Application.Common.Abstractions;
+using DapperRepo.Infrastructure.Users;
+using SqlKata.Compilers;
 using System.Data;
 
-namespace DapperRepo.Infrastructure;
+namespace DapperRepo.Infrastructure.Common;
 
 public class UnitOfWork : IUnitOfWork
 {
@@ -9,16 +11,22 @@ public class UnitOfWork : IUnitOfWork
     private IDbTransaction _transaction;
     private IUsersRepository? _usersRepository;
     private bool _disposed;
+    private readonly Compiler _compiler;
+    private readonly int _commandTimeout;
 
     public UnitOfWork(IDbConnection connection)
     {
         _connection = connection;
         _transaction = _connection.BeginTransaction();
+
+
+        _compiler = new OracleCompiler();
+        _commandTimeout = 30;
     }
 
     public IUsersRepository UsersRepository
     {
-        get { return _usersRepository ?? (_usersRepository = new UsersRepository(_transaction)); }
+        get { return _usersRepository ?? (_usersRepository = new UsersRepository(_transaction, _compiler, _commandTimeout)); }
     }
 
     public void Commit()

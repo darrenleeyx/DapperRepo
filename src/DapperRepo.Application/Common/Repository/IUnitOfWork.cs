@@ -1,4 +1,4 @@
-﻿namespace DapperRepo.Application;
+﻿namespace DapperRepo.Application.Common.Abstractions;
 
 public interface IUnitOfWork : IDisposable
 {
